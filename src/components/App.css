@@ -1,0 +1,186 @@
+:root {
+    --primary: #0292BE;
+    --secundary: white;
+    --tertiary: #EDF8FD;
+    --radius: 8px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F7F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    padding: 10px;
+}
+
+.content {
+    background-color: var(--secundary);
+    padding: 20px;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.headerContainer {
+    display: flex;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.headerContainer div {
+    flex: 1;
+    text-align: center;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    padding: 20px 0 0;
+}
+
+#inputView {
+    border-top-left-radius: var(--radius);
+}
+
+#tableView {
+    border-top-right-radius: var(--radius);
+}
+
+.headerContainer div.active {
+    background-color: var(--primary);
+    color: var(--secundary);
+}
+
+.brutoNetoContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.brutoNetoContainer div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: var(--radius);
+    color: var(--primary);
+}
+
+.brutoNetoContainer div.active {
+    background-color: var(--primary);
+    color: var(--secundary);
+}
+
+.salaryCaptionContainer {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.salaryCaption {
+    padding: 5px 0;
+    color: var(--primary);
+}
+
+.salarySelectOption {
+    border: none;
+    border-bottom: solid 1px;
+    border-color: var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.salaryInputContainer {
+    border: solid 2px;
+    border-color: var(--primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.salaryInput {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding-left: 5px;
+    border-radius: var(--radius);
+    height: calc(100% - 2px);
+}
+
+.calculateBtn {
+    width: 100%;
+    border-radius: var(--radius);
+    padding: 9px;
+    background-color: var(--primary);
+    color: var(--secundary);
+    font-weight: bold;
+}
+
+.tableSalaryHighlightContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.tableSalaryHighlight {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--secundary);
+    font-weight: bold;
+    border-radius: var(--radius);
+    margin-right: 10px;
+}
+
+.tableRowHeaderContainer {
+    display: flex;
+    align-items: end;
+    border-bottom: solid 1px;
+    border-color: var(--primary);
+    padding-top: 10px;
+    color: var(--primary);
+}
+
+.tableRowHeaderContainer div {
+    flex: 1;
+}
+
+.tableRowContainer {
+    display: flex;
+    border-bottom: solid 1px;
+    border-color: var(--primary);
+    padding-top: 10px;
+    font-size: 13px;
+    color: var(--primary);
+}
+
+.tableRowContainer:hover {
+    background-color: var(--tertiary);
+}
+
+.tableRowContainer div {
+    flex: 1;
+}
